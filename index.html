@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Portfolio App
+        </title>
+        <link rel="stylesheet" href="./css/material.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="./js/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-deep_purple.min.css" />
+    </head>
+    <body>
+        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">
+                        My Portfolio App
+                    </span>
+                    <!-- Add spacer, to align navigation to the right -->
+                    <div class="mdl-layout-spacer">
+                    </div>
+                    <!-- Navigation. We hide it in small screens. -->
+<!--
+                    <nav class="mdl-navigation mdl-layout--large-screen-only">
+                        <a class="mdl-navigation__link" href="">
+                            Link
+                        </a>
+                        <a class="mdl-navigation__link" href="">
+                            Link
+                        </a>
+                        <a class="mdl-navigation__link" href="">
+                            Link
+                        </a>
+                        <a class="mdl-navigation__link" href="">
+                            Link
+                        </a>
+                    </nav>
+-->
+                </div>
+          </header>
+          <div class="mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50 is-visible">
+              <header class="nav-drawer-header">
+                  <img src="https://avatars3.githubusercontent.com/u/7099405?v=3&s=400" class="nav-drawer-avatar">
+                    <span class="nav-drawer-primary-text">Angad Singh</span>
+                  <span class="nav-drawer-secondary-text">angads25@gmail.com</span>
+              </header>
+              <nav class="mdl-navigation mdl-color--grey-200">
+                  <a class="mdl-navigation__link" href="#home">
+                      <i class="mdl-color-text--blue-grey-800 material-icons nav-icon">
+                          home
+                      </i>
+                      <strong>Home</strong>
+                  </a>
+                  <a class="mdl-navigation__link" href="#project">
+                      <i class="mdl-color-text--blue-grey-800 material-icons nav-icon">
+                          assignment
+                      </i>
+                      <strong>Projects</strong>
+                  </a>
+                  <a class="mdl-navigation__link" href="#event">
+                      <i class="mdl-color-text--blue-grey-800 material-icons nav-icon">
+                          event
+                      </i>
+                      <strong>Hackathons</strong>
+                  </a>
+                  <a class="mdl-navigation__link" href="#contact">
+                      <i class="mdl-color-text--blue-grey-800 material-icons nav-icon">
+                          account_circle
+                      </i>
+                      <strong>Contact</strong>
+                  </a>
+              </nav>
+          </div>
+          <main class="mdl-layout__content">
+              <div class="page-content">
+                <!-- Your content goes here -->
+              </div>
+          </main>
+        </div>
+    </body>
+</html>
