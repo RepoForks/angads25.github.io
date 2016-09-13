@@ -2,83 +2,211 @@
 <html>
     <head>
         <title>
-            My Portfolio App
+            My Portfolio
         </title>
         <link rel="stylesheet" href="./css/material.min.css">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/material.deep_purple-blue.min.css" />
+        <link rel="stylesheet" href="./css/icon.css">
+        <link rel='icon' href='./img/favicon.ico' type='image/x-icon'/ >
         <script src="./js/material.min.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-deep_purple.min.css" />
+        <script src="./js/jquery-1.6.3.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+                $(".loader").delay(7500).fadeOut("slow");
+            })
+        </script>
     </head>
     <body>
-        <!-- Always shows a header, even in smaller screens. -->
+        <div class="mdl-layout mdl-js-layout loader">
+            <div class="splash-widget">
+                <div class="mdl-spinner mdl-js-spinner is-active"></div><br/><br/>
+                <label>
+                    Gradle is Building...Please wait
+                </label>
+            </div>
+        </div>
         <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
             <header class="mdl-layout__header">
                 <div class="mdl-layout__header-row">
-                    <!-- Title -->
                     <span class="mdl-layout-title">
-                        My Portfolio App
+                        My Portfolio
                     </span>
-                    <!-- Add spacer, to align navigation to the right -->
                     <div class="mdl-layout-spacer">
                     </div>
-                    <!-- Navigation. We hide it in small screens. -->
-<!--
-                    <nav class="mdl-navigation mdl-layout--large-screen-only">
-                        <a class="mdl-navigation__link" href="">
-                            Link
-                        </a>
-                        <a class="mdl-navigation__link" href="">
-                            Link
-                        </a>
-                        <a class="mdl-navigation__link" href="">
-                            Link
-                        </a>
-                        <a class="mdl-navigation__link" href="">
-                            Link
-                        </a>
-                    </nav>
--->
+                    <button id="menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                        <i class="material-icons">more_vert</i>
+                    </button>
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-right">
+                        <li class="mdl-menu__item">
+                            <a class="mdl-toolbar-menu__link" href="https://www.linkedin.com/in/angads25">
+                                <img src="img/linkedin.png" class="toolbar-menu-icon"/> 
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li class="mdl-menu__item">
+                            <a class="mdl-toolbar-menu__link" href="https://www.twitter.com/angads25">
+                                <img src="img/twitter.png" class="toolbar-menu-icon"/> 
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="mdl-menu__item">
+                            <a class="mdl-toolbar-menu__link" href="https://www.facebook.com/angads25">
+                                <img src="img/facebook.png" class="toolbar-menu-icon"/> 
+                                Facebook
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-          </header>
-          <div class="mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50 is-visible">
-              <header class="nav-drawer-header">
-                  <img src="https://avatars3.githubusercontent.com/u/7099405?v=3&s=400" class="nav-drawer-avatar">
+                <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                    <a href="#home" class="mdl-layout__tab is-active">Home</a>
+                    <a href="#favourites" class="mdl-layout__tab">Favourites</a>
+                    <a href="#projects" class="mdl-layout__tab">Projects</a>
+                    <a href="#hackathons" class="mdl-layout__tab">Hackathons</a>
+                    <a href="#contact" class="mdl-layout__tab">Contact</a>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer mdl-color--white-900 mdl-color-text--blue-grey-50 is-visible">
+                <header class="nav-drawer-header">
+                    <img src="https://avatars3.githubusercontent.com/u/7099405?v=3&s=400" class="nav-drawer-avatar"/>
                     <span class="nav-drawer-primary-text">Angad Singh</span>
-                  <span class="nav-drawer-secondary-text">angads25@gmail.com</span>
-              </header>
-              <nav class="mdl-navigation mdl-color--grey-200">
-                  <a class="mdl-navigation__link" href="#home">
-                      <i class="mdl-color-text--blue-grey-800 material-icons nav-icon">
-                          home
-                      </i>
-                      <strong>Home</strong>
-                  </a>
-                  <a class="mdl-navigation__link" href="#project">
-                      <i class="mdl-color-text--blue-grey-800 material-icons nav-icon">
-                          assignment
-                      </i>
-                      <strong>Projects</strong>
-                  </a>
-                  <a class="mdl-navigation__link" href="#event">
-                      <i class="mdl-color-text--blue-grey-800 material-icons nav-icon">
-                          event
-                      </i>
-                      <strong>Hackathons</strong>
-                  </a>
-                  <a class="mdl-navigation__link" href="#contact">
-                      <i class="mdl-color-text--blue-grey-800 material-icons nav-icon">
-                          account_circle
-                      </i>
-                      <strong>Contact</strong>
-                  </a>
-              </nav>
-          </div>
-          <main class="mdl-layout__content">
-              <div class="page-content">
-                <!-- Your content goes here -->
-              </div>
-          </main>
+                    <span class="nav-drawer-secondary-text">angads25@gmail.com</span>
+                </header>
+                <section class="nav-drawer-descript-text mdl-color-text--blue-grey-800">
+                    <div>
+                        <p>
+                            I will write about myself here. I think I can write a quotation here, It might look better.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <main class="mdl-layout__content">
+              <section class="mdl-layout__tab-panel is-active " id="home">
+                  <div class="mdl-cell mdl-cell--12-col">
+                      <div class="docs-text-styling docs-readme">
+                          <h1>
+                              Introduction
+                          </h1>
+                          <p>
+                              The Material Design Lite (MDL) <strong>layout</strong> component is a comprehensive approach to page layout that uses MDL development tenets, allows for efficient use of MDL components, and automatically adapts to different browsers, screen sizes, and devices.
+                          </p>
+                      </div>
+                  </div>
+              </section>
+              <section class="mdl-layout__tab-panel" id="favourites">
+                  <div class="page-content">Favourites</div>
+              </section>
+              <section class="mdl-layout__tab-panel" id="projects">
+                  <div class="page-content">Projects</div>
+              </section>
+              <section class="mdl-layout__tab-panel" id="hackathons">
+                  <div class="mdl-grid">
+                      <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                          <div class="mdl-card__title bg_angelhack_card">
+                              <h2 class="mdl-card__title-text">
+                                  AngelHack Delhi - 2016
+                              </h2>
+                          </div>
+                          <div class="mdl-card__supporting-text">
+                              4 years. More than 250 hackathons. More than 72 cities around the globe. They've seen it all. And from all of these events, They noticed one thing: Anyone. Can. Code.
+
+                          </div>
+                          <div class="mdl-card__actions mdl-card--border">
+                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                                 href="http://angelhack.com/angelhack-delhi-2016/">
+                                  Take Me There
+                              </a>
+                          </div>
+                      </div>
+                      <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                          <div class="mdl-card__title bg_hacknsit_card">
+                              <h2 class="mdl-card__title-text mdl-color-text--blue-grey-800">
+                                  Hack@NSIT - 2016
+                              </h2>
+                          </div>
+                          <div class="mdl-card__supporting-text">
+                                Hack@NSIT 2016 was the second iteration of NSIT's very own Annual Software Hackathon. For 24 intense hours, more than 150 of the most talented students from around the world pushed the limits of technology.
+                          </div>
+                          <div class="mdl-card__actions mdl-card--border">
+                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                                 href="https://www.facebook.com/events/1568400196784686/">
+                                  Take Me There
+                              </a>
+                          </div>
+                      </div>
+                      <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                          <div class="mdl-card__title bg_hackmait_card">">
+                              <h2 class="mdl-card__title-text mdl-color-text--blue-grey-800">
+                                  HackMAIT - 2016
+                              </h2>
+                          </div>
+                          <div class="mdl-card__supporting-text">
+                                Techsurge 2016's premiere hackathon event Hack MAIT in asociation with Google Developer's Group (GDG) at Maharaja Agrasen Institute of Technology, Delhi.
+                          </div>
+                          <div class="mdl-card__actions mdl-card--border">
+                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                                 href="https://www.facebook.com/events/1512818495689998/">
+                                  Take Me There
+                              </a>
+                          </div>
+                      </div>
+                      <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                          <div class="mdl-card__title bg_hackenvision_card">
+                              <h2 class="mdl-card__title-text">
+                                  Hack Envision - 2016
+                              </h2>
+                          </div>
+                          <div class="mdl-card__supporting-text">
+                                Envision was built upon the idea that everyone should be able to participate, from individuals who have never written a line of code to experts who have been developing for years. To help facilitate the learning experience, they compiled a number of resources to help during the weekend. In addition, they also offered a series of tech talks throughout the event and Pizzas too!
+
+                          </div>
+                          <div class="mdl-card__actions mdl-card--border">
+                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                                 href="https://www.facebook.com/events/796536923806677/">
+                                  Take Me There
+                              </a>
+                          </div>
+                      </div>
+                      <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                          <div class="mdl-card__title bg_geekaholic_card">
+                              <h2 class="mdl-card__title-text mdl-color-text--blue-grey-800">
+                                  Geekaholic - 2014
+                              </h2>
+                          </div>
+                          <div class="mdl-card__supporting-text">
+                                Doesn't matter if you are a Designer, Web Developer or App Developer or even a Idea Generating Machine geekiness is the lone chemical element you should have. Come here and we'll bond you with other geeky chemicals to make an explosive geek bomb which'll burst out with an amazing thing.
+                          </div>
+                          <div class="mdl-card__actions mdl-card--border">
+                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+                                 href="http://www.eventbrite.com/e/geekaholic-addicted-to-code-tickets-10035451305">
+                                  Take Me There
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+              <section class="mdl-layout__tab-panel" id="contact">
+                  <div class="page-content mdl-card">
+                      <div class="mdl-card__title">
+                          Contact
+                      </div>
+                  </div>
+              </section>
+            </main>
+<!--
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">My Portfolio</div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li>
+                            <a href="#">Design by Angad Singh</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+-->
         </div>
     </body>
 </html>

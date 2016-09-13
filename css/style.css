@@ -1,51 +1,135 @@
-/**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+    align-items: center;
+	background-color: rgb(249,249,249);
+}
+
+.splash-widget {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+    font-family:'Roboto','Helvetica','Arial',sans-serif
+}
+
 .nav-drawer-avatar {
-  width: 48px;
-  height: 48px;
-  border-radius: 24px;
+    width: 144px;
+    height: 144px;
+    border-radius: 72px;
 }
 .nav-drawer-header {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 16px;
-  height: 151px;
+    background-color: rgb(103,58,183);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
 }
 .nav-drawer-primary-text {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 8px;
-  width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
+    padding-top: 16px;
+    font-family:'Roboto','Helvetica','Arial',sans-serif
 }
 .nav-drawer-secondary-text {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-bottom: 8px;
-  width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 8px;
+    font-family:'Roboto','Helvetica','Arial',sans-serif
+}
+.nav-drawer-descript-text {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    padding: 16px;
+    opacity: 0.87;
+    font-family:'Roboto','Helvetica','Arial',sans-serif
 }
 .nav-icon {
     margin-right:16px;
+}
+.toolbar-menu-icon {
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    margin-right: 8px;
+}
+.mdl-toolbar-menu__link {
+  color: rgb(0,0,0);
+  text-decoration: none;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  opacity: 0.87; 
+}
+.mdl-navigation__link .material-icons {
+    vertical-align: middle; 
+}
+.docs-readme {
+    margin: 16px;
+    padding: 4px;
+    font-size:32px;
+}
+.docs-text-styling ol li {
+    font-family:'Roboto','Helvetica','Arial',sans-serif;
+}
+.docs-text-styling h1 {
+    color:#c2185b;
+    margin:.67em 0;
+}
+.docs-text-styling h2 {
+    padding-top:48px;
+    line-height:32px;
+    color:#c2185b;
+}
+.docs-text-styling h1,.docs-text-styling h2,.docs-text-styling h3,.docs-text-styling h4 {
+    font-size:16px;
+    color:rgba(0,0,0,.54);
+    font-weight:500;
+    text-transform:uppercase;
+}
+.docs-text-styling a {
+    text-decoration:none;
+}
+
+<!-- Cards Style -->
+.hack-card-wide .mdl-card {
+  width: 100%;
+}
+.hack-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 256px;
+/*  background: url('../img/angelhack.jpg') center / cover;*/
+}
+.hack-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.bg_angelhack_card {
+    background: url('../img/angelhack2016.jpg') center / cover;
+}
+.bg_hacknsit_card {
+    background: url('../img/hacknsit2016.jpg') center / cover;
+}
+.bg_hackmait_card {
+    background: url('../img/hackmait2016.png') center / cover;
+}
+.bg_hackenvision_card {
+    background: url('../img/hackenvision2016.jpg') center / cover;
+}
+.bg_geekaholic_card {
+    background: url('../img/geekaholic2014.png') center / cover;
 }
