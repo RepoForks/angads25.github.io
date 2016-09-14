@@ -11,6 +11,7 @@
 
 .splash-widget {
     margin: auto;
+    padding: 32px;
     text-align: center;
     align-items: center;
     align-content: center;
@@ -19,15 +20,14 @@
 }
 
 .nav-drawer-avatar {
-    width: 144px;
-    height: 144px;
-    border-radius: 72px;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
 }
 .nav-drawer-header {
     background-color: rgb(103,58,183);
     box-sizing: border-box;
     display: flex;
-    align-items: center;
     flex-direction: column;
     justify-content: flex-end;
     padding: 16px;
@@ -37,8 +37,8 @@
     position: relative;
     flex-direction: row;
     align-items: center;
-    font-size: 24px;
-    padding-top: 16px;
+    font-size: 16px;
+    padding-top: 8px;
     font-family:'Roboto','Helvetica','Arial',sans-serif
 }
 .nav-drawer-secondary-text {
@@ -46,7 +46,8 @@
     position: relative;
     flex-direction: row;
     align-items: center;
-    padding-top: 8px;
+    font-size: 12px;
+    padding-top: 4px;
     font-family:'Roboto','Helvetica','Arial',sans-serif
 }
 .nav-drawer-descript-text {
@@ -81,8 +82,11 @@
 }
 .docs-readme {
     margin: 16px;
-    padding: 4px;
-    font-size:32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 64px;
+    padding-right: 64px;
+    font-size : 32px;
 }
 .docs-text-styling ol li {
     font-family:'Roboto','Helvetica','Arial',sans-serif;
@@ -97,7 +101,7 @@
     color:#c2185b;
 }
 .docs-text-styling h1,.docs-text-styling h2,.docs-text-styling h3,.docs-text-styling h4 {
-    font-size:16px;
+    font-size:12px;
     color:rgba(0,0,0,.54);
     font-weight:500;
     text-transform:uppercase;
@@ -118,6 +122,35 @@
 .hack-card-wide > .mdl-card__menu {
   color: #fff;
 }
+
+.home-card {
+    color: #fff;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+.home-div {
+    background: url('../img/home-bkg.png') center / cover;
+    height: 384px;
+    text-align: center;
+    margin-bottom:192px;
+}
+
+
+.home-avatar {
+    width: 256px;
+    height: 256px;
+    margin-top: 256px;
+    border-radius: 128px;
+}
+
+.home-content {
+    width: 100%;
+    text-align: center;
+}
+
 .bg_angelhack_card {
     background: url('../img/angelhack2016.jpg') center / cover;
 }

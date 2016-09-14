@@ -13,13 +13,13 @@
         <script src="./js/jquery-1.6.3.min.js"></script>
         <script type="text/javascript">
             $(window).load(function() {
-                $(".loader").delay(7500).fadeOut("slow");
+                $(".loader").delay(000).fadeOut("slow");
             })
         </script>
     </head>
     <body>
         <div class="mdl-layout mdl-js-layout loader">
-            <div class="splash-widget">
+            <div class="splash-widget mdl-shadow--2dp">
                 <div class="mdl-spinner mdl-js-spinner is-active"></div><br/><br/>
                 <label>
                     Gradle is Building...Please wait
@@ -60,36 +60,47 @@
                 </div>
                 <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
                     <a href="#home" class="mdl-layout__tab is-active">Home</a>
-                    <a href="#favourites" class="mdl-layout__tab">Favourites</a>
-                    <a href="#projects" class="mdl-layout__tab">Projects</a>
-                    <a href="#hackathons" class="mdl-layout__tab">Hackathons</a>
-                    <a href="#contact" class="mdl-layout__tab">Contact</a>
+                    <a href="#favourites" class="mdl-layout__tab">Things I do</a>
+                    <a href="#projects" class="mdl-layout__tab">Things I made</a>
+                    <a href="#challenges" class="mdl-layout__tab">Challenges</a>
+                    <a href="#contact" class="mdl-layout__tab">Say Hello!</a>
                 </div>
             </header>
             <div class="mdl-layout__drawer mdl-color--white-900 mdl-color-text--blue-grey-50 is-visible">
                 <header class="nav-drawer-header">
-                    <img src="https://avatars3.githubusercontent.com/u/7099405?v=3&s=400" class="nav-drawer-avatar"/>
+                    <img src="./img/7099405.jpg" class="nav-drawer-avatar"/>
                     <span class="nav-drawer-primary-text">Angad Singh</span>
                     <span class="nav-drawer-secondary-text">angads25@gmail.com</span>
                 </header>
                 <section class="nav-drawer-descript-text mdl-color-text--blue-grey-800">
                     <div>
                         <p>
-                            I will write about myself here. I think I can write a quotation here, It might look better.
+                            The purpose of education is to make good human beings with skill and expertise.
+                             Enlightened human beings can be created by teachers.
                         </p>
                     </div>
                 </section>
             </div>
             <main class="mdl-layout__content">
               <section class="mdl-layout__tab-panel is-active " id="home">
-                  <div class="mdl-cell mdl-cell--12-col">
-                      <div class="docs-text-styling docs-readme">
+                  <div class="home-card mdl-cell mdl-cell--12-col mdl-color-text--blue-grey-800 mdl-shadow--2dp">
+                      <div class="home-div">
+                          <img class="home-avatar" src="./img/7099405.jpg"/>
+                      </div>
+                      <div class="home-content">
                           <h1>
-                              Introduction
+                            Angad Singh
                           </h1>
-                          <p>
-                              The Material Design Lite (MDL) <strong>layout</strong> component is a comprehensive approach to page layout that uses MDL development tenets, allows for efficient use of MDL components, and automatically adapts to different browsers, screen sizes, and devices.
-                          </p>
+                          <h5 class="mdl-color-text--blue-grey-500">
+                            Android and Java Developer
+                          </h5>
+                      </div>
+                      <div class="docs-readme">
+                          <h5>
+                              Hi, I am is Angad Singh. Presently pursuing Engineering in Computer Science from an
+                              Guru Tegh Bahadur Institute of Technology in New Delhi, India. I am an Android, 
+                              Java Developer and gamer. I love what I do, write code to bring stuff to life!
+                          </h5>
                       </div>
                   </div>
               </section>
@@ -99,7 +110,7 @@
               <section class="mdl-layout__tab-panel" id="projects">
                   <div class="page-content">Projects</div>
               </section>
-              <section class="mdl-layout__tab-panel" id="hackathons">
+              <section class="mdl-layout__tab-panel" id="challenges">
                   <div class="mdl-grid">
                       <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
                           <div class="mdl-card__title bg_angelhack_card">
@@ -136,7 +147,7 @@
                       </div>
                       <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
                           <div class="mdl-card__title bg_hackmait_card">">
-                              <h2 class="mdl-card__title-text mdl-color-text--blue-grey-800">
+                              <h2 class="mdl-card__title-text">
                                   HackMAIT - 2016
                               </h2>
                           </div>
@@ -186,27 +197,48 @@
                   </div>
               </section>
               <section class="mdl-layout__tab-panel" id="contact">
-                  <div class="page-content mdl-card">
-                      <div class="mdl-card__title">
-                          Contact
-                      </div>
+                  <div class="home-card mdl-cell mdl-cell--12-col mdl-color-text--blue-grey-800 mdl-shadow--2dp home-content">
+                      <form action="mailto:angads25@gmail.com" method="post" enctype="plain/text">
+                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="name" name="name">
+                            <label class="mdl-textfield__label" for="name">Name</label>
+                          </div>
+                          <br/>
+                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="email" id="email" name="email">
+                            <label class="mdl-textfield__label" for="email">Email</label>
+                          </div>
+                          <br/>
+                          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                              <textarea class="mdl-textfield__input" type="text" id="message" name="message" rows="5">Hi Angad, How are you Doing?</textarea>
+                            <label class="mdl-textfield__label" for="message">Message</label>
+                          </div>
+                          <br/>
+                          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" onclick="false">
+                              Send
+                          </button>
+                      </form>
+                      <br/>
+                      <a href="https://www.linkedin.com/in/angads25"><img src="img/linkedin.png" width="48px" height="48px"/></a>
+                      &nbsp;
+                      <a href="https://www.twitter.com/angads25"><img src="img/twitter.png"  width="48px" height="48px"/></a>
+                      &nbsp;
+                      <a href="https://www.facebook.com/angads25"><img src="img/facebook.png"  width="48px" height="48px"/></a>
                   </div>
+                  <footer class="mdl-mini-footer">
+                    <div class="mdl-mini-footer__left-section">
+                        <div class="mdl-logo">My Portfolio</div>
+                    </div>
+                    <div class="mdl-mini-footer__right-section">
+                        <ul class="mdl-mini-footer__link-list">
+                            <li>
+                                <a href="#">Design by Angad Singh</a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
               </section>
             </main>
-<!--
-            <footer class="mdl-mini-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">My Portfolio</div>
-                </div>
-                <div class="mdl-mini-footer__right-section">
-                    <ul class="mdl-mini-footer__link-list">
-                        <li>
-                            <a href="#">Design by Angad Singh</a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
--->
         </div>
     </body>
 </html>
