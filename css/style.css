@@ -100,7 +100,7 @@
     line-height:32px;
     color:#c2185b;
 }
-.docs-text-styling h1,.docs-text-styling h2,.docs-text-styling h3,.docs-text-styling h4 {
+.docs-text-styling h1,.docs-text-styling h2,.docs-text-styling,.docs-text-styling h4 {
     font-size:12px;
     color:rgba(0,0,0,.54);
     font-weight:500;
@@ -117,7 +117,6 @@
 .hack-card-wide > .mdl-card__title {
   color: #fff;
   height: 256px;
-/*  background: url('../img/angelhack.jpg') center / cover;*/
 }
 .hack-card-wide > .mdl-card__menu {
   color: #fff;
@@ -165,4 +164,7 @@
 }
 .bg_geekaholic_card {
     background: url('../img/geekaholic2014.png') center / cover;
+}
+.bg_breakthecode_card {
+    background: url('../img/brcd2015.jpg') center / cover;
 }

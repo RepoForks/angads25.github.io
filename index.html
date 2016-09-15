@@ -13,7 +13,7 @@
         <script src="./js/jquery-1.6.3.min.js"></script>
         <script type="text/javascript">
             $(window).load(function() {
-                $(".loader").delay(000).fadeOut("slow");
+                $(".loader").delay(00).fadeOut("slow");
             })
         </script>
     </head>
@@ -22,7 +22,7 @@
             <div class="splash-widget mdl-shadow--2dp">
                 <div class="mdl-spinner mdl-js-spinner is-active"></div><br/><br/>
                 <label>
-                    Gradle is Building...Please wait
+                    <strong>Gradle is Building...Please wait</strong>
                 </label>
             </div>
         </div>
@@ -39,6 +39,12 @@
                     </button>
                     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-right">
                         <li class="mdl-menu__item">
+                            <a class="mdl-toolbar-menu__link" href="https://www.facebook.com/angads25">
+                                <img src="img/facebook.png" class="toolbar-menu-icon"/> 
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mdl-menu__item">
                             <a class="mdl-toolbar-menu__link" href="https://www.linkedin.com/in/angads25">
                                 <img src="img/linkedin.png" class="toolbar-menu-icon"/> 
                                 LinkedIn
@@ -48,12 +54,6 @@
                             <a class="mdl-toolbar-menu__link" href="https://www.twitter.com/angads25">
                                 <img src="img/twitter.png" class="toolbar-menu-icon"/> 
                                 Twitter
-                            </a>
-                        </li>
-                        <li class="mdl-menu__item">
-                            <a class="mdl-toolbar-menu__link" href="https://www.facebook.com/angads25">
-                                <img src="img/facebook.png" class="toolbar-menu-icon"/> 
-                                Facebook
                             </a>
                         </li>
                     </ul>
@@ -85,7 +85,7 @@
               <section class="mdl-layout__tab-panel is-active " id="home">
                   <div class="home-card mdl-cell mdl-cell--12-col mdl-color-text--blue-grey-800 mdl-shadow--2dp">
                       <div class="home-div">
-                          <img class="home-avatar" src="./img/7099405.jpg"/>
+                          <img class="home-avatar mdl-shadow--2dp" src="./img/7099405.jpg"/>
                       </div>
                       <div class="home-content">
                           <h1>
@@ -97,9 +97,9 @@
                       </div>
                       <div class="docs-readme">
                           <h5>
-                              Hi, I am is Angad Singh. Presently pursuing Engineering in Computer Science from an
+                              Hi, I am is Angad Singh. Presently pursuing Engineering in Computer Science from 
                               Guru Tegh Bahadur Institute of Technology in New Delhi, India. I am an Android, 
-                              Java Developer and gamer. I love what I do, write code to bring stuff to life!
+                              Java Developer and Gamer. I love what I do, write code to bring stuff to life!
                           </h5>
                       </div>
                   </div>
@@ -108,90 +108,96 @@
                   <div class="page-content">Favourites</div>
               </section>
               <section class="mdl-layout__tab-panel" id="projects">
-                  <div class="page-content">Projects</div>
+                  <div class="mdl-grid">
+                      <div class="home-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+                          <img max-width="40%" height="192px" style="float:left;"
+                               src="https://raw.githubusercontent.com/Angads25/android-filepicker/master/theme_device_default.png" />
+                          <div class="mdl-color-text--blue-grey-800" 
+                               style="float:left;margin-left:16px;margin-right:16px;height:100%;width:50%;">
+                              <h3 style="margin-top:0px;">
+                                  Android FilePicker Library
+                              </h3>
+                               Android Library to select files/directories from Device Storage.
+                          </div>
+                      </div>
+                      <div class="home-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+                      </div>
+                      <div class="home-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+                      </div>
+                      <div class="home-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+                      </div>
+                  </div>
               </section>
               <section class="mdl-layout__tab-panel" id="challenges">
                   <div class="mdl-grid">
                       <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
                           <div class="mdl-card__title bg_angelhack_card">
-                              <h2 class="mdl-card__title-text">
+                              <a class="mdl-card__title-text mdl-toolbar-menu__link" href="http://angelhack.com/angelhack-delhi-2016/">
                                   AngelHack Delhi - 2016
-                              </h2>
+                              </a>
                           </div>
                           <div class="mdl-card__supporting-text">
                               4 years. More than 250 hackathons. More than 72 cities around the globe. They've seen it all. And from all of these events, They noticed one thing: Anyone. Can. Code.
 
                           </div>
+<!--
                           <div class="mdl-card__actions mdl-card--border">
                               <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
                                  href="http://angelhack.com/angelhack-delhi-2016/">
                                   Take Me There
                               </a>
                           </div>
+-->
                       </div>
                       <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
                           <div class="mdl-card__title bg_hacknsit_card">
-                              <h2 class="mdl-card__title-text mdl-color-text--blue-grey-800">
+                              <a class="mdl-card__title-text mdl-color-text--blue-grey-800 mdl-toolbar-menu__link" href="https://www.facebook.com/events/1568400196784686/">
                                   Hack@NSIT - 2016
-                              </h2>
+                              </a>
                           </div>
                           <div class="mdl-card__supporting-text">
                                 Hack@NSIT 2016 was the second iteration of NSIT's very own Annual Software Hackathon. For 24 intense hours, more than 150 of the most talented students from around the world pushed the limits of technology.
                           </div>
-                          <div class="mdl-card__actions mdl-card--border">
-                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                                 href="https://www.facebook.com/events/1568400196784686/">
-                                  Take Me There
-                              </a>
-                          </div>
                       </div>
                       <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
                           <div class="mdl-card__title bg_hackmait_card">">
-                              <h2 class="mdl-card__title-text">
+                              <a class="mdl-card__title-text mdl-toolbar-menu__link" href="https://www.facebook.com/events/1512818495689998/">
                                   HackMAIT - 2016
-                              </h2>
+                              </a>
                           </div>
                           <div class="mdl-card__supporting-text">
                                 Techsurge 2016's premiere hackathon event Hack MAIT in asociation with Google Developer's Group (GDG) at Maharaja Agrasen Institute of Technology, Delhi.
                           </div>
-                          <div class="mdl-card__actions mdl-card--border">
-                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                                 href="https://www.facebook.com/events/1512818495689998/">
-                                  Take Me There
-                              </a>
-                          </div>
                       </div>
                       <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
                           <div class="mdl-card__title bg_hackenvision_card">
-                              <h2 class="mdl-card__title-text">
+                              <a class="mdl-card__title-text mdl-toolbar-menu__link" href="https://www.facebook.com/events/796536923806677/">
                                   Hack Envision - 2016
-                              </h2>
+                              </a>
                           </div>
                           <div class="mdl-card__supporting-text">
                                 Envision was built upon the idea that everyone should be able to participate, from individuals who have never written a line of code to experts who have been developing for years. To help facilitate the learning experience, they compiled a number of resources to help during the weekend. In addition, they also offered a series of tech talks throughout the event and Pizzas too!
 
                           </div>
-                          <div class="mdl-card__actions mdl-card--border">
-                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                                 href="https://www.facebook.com/events/796536923806677/">
-                                  Take Me There
+                      </div>
+                      <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
+                          <div class="mdl-card__title bg_breakthecode_card">
+                              <a class="mdl-card__title-text mdl-color-text--blue-grey-800 mdl-toolbar-menu__link" href="https://www.facebook.com/events/1611838925703075/">
+                                  Break The Code - 2015
                               </a>
+                          </div>
+                          <div class="mdl-card__supporting-text">
+                                An online programming contest organized by CodeChef Gtbit Club Campus Chapter.
                           </div>
                       </div>
                       <div class="hack-card-wide mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
                           <div class="mdl-card__title bg_geekaholic_card">
-                              <h2 class="mdl-card__title-text mdl-color-text--blue-grey-800">
+                              <a class="mdl-card__title-text mdl-color-text--blue-grey-800  mdl-toolbar-menu__link" href="http://www.eventbrite.com/e/geekaholic-addicted-to-code-tickets-10035451305">
                                   Geekaholic - 2014
-                              </h2>
+                              </a>
                           </div>
                           <div class="mdl-card__supporting-text">
                                 Doesn't matter if you are a Designer, Web Developer or App Developer or even a Idea Generating Machine geekiness is the lone chemical element you should have. Come here and we'll bond you with other geeky chemicals to make an explosive geek bomb which'll burst out with an amazing thing.
-                          </div>
-                          <div class="mdl-card__actions mdl-card--border">
-                              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
-                                 href="http://www.eventbrite.com/e/geekaholic-addicted-to-code-tickets-10035451305">
-                                  Take Me There
-                              </a>
                           </div>
                       </div>
                   </div>
@@ -210,8 +216,8 @@
                           </div>
                           <br/>
                           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                              <textarea class="mdl-textfield__input" type="text" id="message" name="message" rows="5">Hi Angad, How are you Doing?</textarea>
-                            <label class="mdl-textfield__label" for="message">Message</label>
+                              <textarea class="mdl-textfield__input" type="text" id="body" name="body" rows="5">Hi Angad, How are you Doing?</textarea>
+                            <label class="mdl-textfield__label" for="body">Message</label>
                           </div>
                           <br/>
                           <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect" onclick="false">
